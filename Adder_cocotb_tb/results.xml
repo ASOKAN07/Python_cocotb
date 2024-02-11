@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1707633148" />
+    <testcase name="addr_test" classname="adder_tb" file="/mnt/c/Users/asoka/OneDrive/Desktop/Python_doument/Adder_cocotb/adder_tb.py" lineno="15" time="0.04014325141906738" sim_time_ns="0.801" ratio_time="19.953540674573716" />
+  </testsuite>
+</testsuites>
