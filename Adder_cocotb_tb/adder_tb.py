@@ -18,9 +18,7 @@ async def addr_test(dut):
         a=cocotb.random.randrange(0,16)
         b=cocotb.random.randrange(0,16)
         carry_in=cocotb.random.randrange(0,1)
-        
         #dut Driver 
-
         dut.a.value=a
         dut.b.value=b
         dut.carry_in.value=carry_in
@@ -48,10 +46,4 @@ async def addr_test(dut):
                  dut._log.info("Input a=%d b=%d carry_in=%d"%(a, b, carry_in))
                  dut._log.info("Output sum=%d carry_out=%d"%(sum_,carry_out))
                  raise TestFailure("Output Sum and Carry is UnExpected")
-
-            
-
         await Timer(10,"ps")
-
-
-
